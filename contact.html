@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Online Shopping Site for Mobiles, Electronics, Furniture, Grocery,
+      Lifestyle, Books & More. Best Offers!
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="utils.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <header>
+        <nav class="navbar h-nav">
+          <div class="logo">
+            <img src="logo.png" alt="" />
+          </div>
+          <ul class="navlist v-class">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="search v-class">
+            <label for="search">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </label>
+            <input type="text" name="" id="search" placeholder="Search Here" />
+          </div>
+            <div class="burger">
+              <div class="l-vline"></div>
+              <div class="l-vline"></div>
+              <div class="l-vline"></div>
+            </div>
+              </nav>
+      </header>
+    <main>
+        <div class="Login-box">
+            <h1>Contact us</h1>
+            <form>
+                <div id="box">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" name="usertname" id="name" placeholder="Enter Username">
+                </div>
+                <div id="box">
+                    <i class="fa fa-envelope-o"></i>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div id="box">
+                    <i class="fa fa-unlock"></i>
+                    <input type="password" name="password" id="password" placeholder="Enter password">
+                </div>
+                <div id="box">
+                    <i class="fa fa-phone"></i>
+                    <input type="number" name="number" id="number" placeholder="Enter phone number">
+                </div>
+                <div id="textarea">
+                    <div class="p">
+                        <p>Enter your concern:</p>
+                    </div>
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                </div>
+                <button class="btn">Submit now</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="last-box">
+            <div class="footer">
+                <div class="icon">
+                    <div class="img">
+                        <img src="logo.png" alt="" width="80px">
+                      </div>
+                        <div class="lines">
+                          <p>Shop for everything you need</p>
+                      </div>
+                      <div class="download">
+                        <img src="images/play-store.png" alt="" width="100px"><br>
+                        <img src="images/app-store.png" alt="" width="100px">
+                      </div>
+                </div>
+                <div class="f-1">
+                    <ul>
+                        <h1>Connect with us</h1>
+                        <li class="f-box"><a href="#">Facebook</li></a>
+                        <li class="f-box"><a href="#">Twitter</li></a>
+                        <li class="f-box"><a href="#">Instagram</li></a>
+                    </ul>
+                </div>
+                <div class="f-2">
+                    <ul>
+                        <h1>Product</h1>
+                        <li class="m-box"> <a href="#">Smartphones</li></a>
+                        <li class="m-box"> <a href="#">Grocery</li></a>
+                        <li class="m-box"> <a href="#">T-shirts</li></a>
+                        <li class="m-box"> <a href="#">Shoes</li></a>
+                    </ul>
+                </div>
+                <div class="f-3">
+                    <ul>
+                        <h1>Services</h1>
+                        <li class="s-box"><a href="#">Sell</li></a>
+                        <li class="s-box"><a href="#">Privacy issue</li></a>
+                        <li class="s-box"><a href="#">Report abuse</li></a>
+                        <li class="s-box"><a href="#">Contact us</li></a>
+                    </ul>
+                </div>
+                <div class="f-4">
+                    <ul>
+                        <h1>Our Partners</h1>
+                        <li class="p-box"><a href="#">Apple</li></a>
+                        <li class="p-box"><a href="#">Samsung</li></a>
+                        <li class="p-box"><a href="#">Gameloft</li></a>
+                        <li class="p-box"><a href="#">Bantai inc</li></a>
+                    </ul>
+                </div>
+            </div>
+            
+        
+    </footer>
+    <script>
+      burger=document.querySelector(".burger")
+      navList=document.querySelector(".v-class")
+      navbar=document.querySelector(".h-nav")
+      search=document.querySelector(".search")
+  
+      burger.addEventListener("click" , ()=>{
+        navList.classList.toggle('v-class')
+        search.classList.toggle('v-class')
+        navbar.classList.toggle('h-nav')
+      })
+    </script>
+    </body>
+    </html>
